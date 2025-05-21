@@ -1,19 +1,19 @@
 public class Circle {
-    private double rad;
+    private double radius;
 
-    public Circle(double rads) {
-        this.rad = rads;
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
-    public double getRad() {
-        return this.rad;
+    public double getRadius() {
+        return this.radius;
     }
 
     public double circumference() {
-        return 2 * 3.14 * this.rad;
+        return 2 * 3.14 * this.radius;
     }
 
     public double area() {
-        return 3.14 * this.rad * this.rad;
+        return 3.14 * this.radius * this.radius;
     }
 }

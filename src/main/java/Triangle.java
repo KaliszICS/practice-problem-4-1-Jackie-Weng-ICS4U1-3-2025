@@ -1,41 +1,46 @@
-public class Triangle { //notice that it starts with a capital letter
-	
-	//Instance variables - attributes
-	private double side1;
-	private double side2;
-	private double side3;
-	private double angle1;
-	private double angle2;
-	private double angle3;
+public class Triangle {
 
-	//Constructor - runs when the object is created
-	public Triangle(double side1, double s2, double s3, double a1, double a2, double a3) {
-		this.side1 = side1;
-		side2 = s2;
-		this.side3 = s3;
-		this.angle1 = a1;
-		this.angle2 = a2;
-		this.angle3 = a3;
+	private double Side1;
+	private double Side2;
+	private double Side3;
+	private double Angle1;
+	private double Angle2;
+	private double Angle3;
+
+	public Triangle(double Side1, double Side2, double Side3, double Angle1, double Angle2, double Angle3) {
+		this.Side1 = Side1;
+		this.Side2 = Side2;
+		this.Side3 = Side3;
+		this.Angle1 = Angle1;
+		this.Angle2 = Angle2;
+		this.Angle3 = Angle3;
 	}
 
-	//Methods
-
-	//getters
-
-	public double getSide1() {
-		return this.side1;
+	public double getSide1(){
+		return this.Side1;
 	}
 
-	public double getSide2() {
-		return this.side2;
+	public double getSide2(){
+		return this.Side2;
 	}
 
-	public double getSide3() {
-		return this.side3;
+
+	public double getSide3(){
+		return this.Side3;
 	}
 
-	//This is not a getter, so don't write get
+	public double getAngle1(){
+		return this.Angle1;
+	}
+
+	public double getAngle2(){
+		return this.Angle2;
+	}
+
+	public double getAngle3(){
+		return this.Angle3;
+	}
 	public double perimeter() {
-		return this.side1 + this.side2 + this.side3;
+		return this.Side1 + this.Side2 + this.Side3;
 	}
 }
